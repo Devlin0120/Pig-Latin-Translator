@@ -1,14 +1,14 @@
 pyg = 'ay'
 
-original = raw_input('Enter a word:')
+original = input('Enter a word:')
 
 if len(original) > 0 and original.isalpha():
     word = original.lower()
     first = word[0]
-    print original
+    print (original)
 else:
-    print 'empty'
+    print ('empty')
 new_word = word + first + pyg
 new_word = original[1:len(new_word)] + first + pyg
-print 'translates to:'
-print new_word
+print ('translates to:')
+print (new_word)
